@@ -76,30 +76,30 @@
 <ul>
   <li>do~while문의 문장구성은 다음과 같다.</li>
   <li>do의 경우 while문을 실행하기 전, 무조건적으로 1번은 실행을 해라! 라는 역할을 한다.</li>
-    <pre><code>
-        do {
-          실행할 문장;
-        }while(조건식);
-    </code></pre>
+  <pre><code>
+      do {
+        실행할 문장;
+      }while(조건식);
+  </code></pre>
   <li>while문을 사용하다보면 아래와 같이 변수에 초기값을 주고, 0을 입력했을 시 종료 등의 기능을 만들 때가 있다. 초기값을 0으로 두었기 때문에 해당 프로그램은 바로 종료가 된다. 그런 경우 바로        do~while문을 사용하게 된다.</li>
-     <pre><code>
-      package controlTest;
+  <pre><code>
+    package controlTest;
 
-      import java.util.Scanner;
+    import java.util.Scanner;
 
-      public class DoWhileTest {
-        public static void main(String[] args) {
-          String msg = "1. 통신요금 조회\n2. 번호이동\n3. 분실신고\n0. 상담원 연결";
-          Scanner sc = new Scanner(System.in);
-          int choice = 0;
+    public class DoWhileTest {
+      public static void main(String[] args) {
+        String msg = "1. 통신요금 조회\n2. 번호이동\n3. 분실신고\n0. 상담원 연결";
+        Scanner sc = new Scanner(System.in);
+        int choice = 0;
 
-          do{
-            System.out.println(msg);
-            choice = sc.nextInt();
-          } while(choice != 0);
-        }
+        do{
+          System.out.println(msg);
+          choice = sc.nextInt();
+        } while(choice != 0);
       }
-     </code></pre>
+    }
+  </code></pre>
 </ul>
 
 
@@ -149,21 +149,21 @@
   <li>메모리상 자바에서는 동적 배열만 존재한다.</li>
   <img src = "https://postfiles.pstatic.net/MjAyMjA4MDFfMTk1/MDAxNjU5MzE3OTk1Mjgx.qGoyshiFvGKlmzOTflFVNGqKLggKsfh162kINkfvcG8g.HUqdHKrlrNiKryLIqIqtGS_cNkO6vlR-0dt6r0Y4uw0g.PNG.mesudal/SE-19657f7e-6482-49a9-b17c-94d4d800e03e.png?type=w773">
   <li>배열의 선언 방법</li>
-    <pre><code>
-      /* 저장할 값을 정확히 알고 있을 때 사용 */
-      // ex) "1~10까지 숫자 중 홀수만 저장하세요" 등등
-      자료형 배열명[] = {값1, 값2, 값3, ...};
+  <pre><code>
+    /* 저장할 값을 정확히 알고 있을 때 사용 */
+    // ex) "1~10까지 숫자 중 홀수만 저장하세요" 등등
+    자료형 배열명[] = {값1, 값2, 값3, ...};
 
-      /* 저장할 칸수는 정확히 알고 있지만, 어떤 값을 저장할지 모를 때 사용 */
-      // ex) "1~10까지 숫자 중 5개 랜덤하게 저장하세요" 등등
-      자료형 배열명[] = new 자료형[칸수]; 
+    /* 저장할 칸수는 정확히 알고 있지만, 어떤 값을 저장할지 모를 때 사용 */
+    // ex) "1~10까지 숫자 중 5개 랜덤하게 저장하세요" 등등
+    자료형 배열명[] = new 자료형[칸수]; 
 
-      /* 어떤 값을 넣을지도, 몇 칸 만들지도 모를 때 사용(주소의 초기값) */
-      // ex) "값을 입력받을 때마다 배열에 저장하세요" 등등
-      자료형 배열명[] = null;
-              ↓
-      배열명 = new 자료형[칸수]; // 배열의 길이를 알게 되는 경우 다시 선언
-    </code></pre>
+    /* 어떤 값을 넣을지도, 몇 칸 만들지도 모를 때 사용(주소의 초기값) */
+    // ex) "값을 입력받을 때마다 배열에 저장하세요" 등등
+    자료형 배열명[] = null;
+            ↓
+    배열명 = new 자료형[칸수]; // 배열의 길이를 알게 되는 경우 다시 선언
+  </code></pre>
 </ul>
 
 
