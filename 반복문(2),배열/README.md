@@ -68,8 +68,6 @@
       }
     }
   </code></pre>
-  <li></li>
-  <li></li>
 </ul>
 
 
@@ -121,7 +119,6 @@
         }
       </code></pre>
     </ul>
-  <li></li>
     <ul>
       <li>continue : 즉시 다음 반복(스킵 역할)</li>
       <pre><code>
@@ -135,9 +132,6 @@
         }
       </code></pre>
     </ul>
-  <li></li>
-  <li></li>
-  <li></li>
 </ul>
 
 
