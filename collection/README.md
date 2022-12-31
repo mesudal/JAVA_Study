@@ -1,1 +1,1 @@
-# JAVA_Study
+# Collection 실습 코드
