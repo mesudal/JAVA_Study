@@ -1,9 +1,5 @@
 # 파일 입출력 공부...
 
-<pre><code>
-  
-</pre></code>
-
 
 <h3>Pattern</h3>
 <ul>
